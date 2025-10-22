@@ -16,6 +16,7 @@ return {
         enabled = true,
         open_cmd = "tabedit", -- or "vsplit"
       },
+      fvm = true,
     })
   end,
 }
