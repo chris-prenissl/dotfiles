@@ -11,9 +11,14 @@ return {
   opts = {
     -- add any opts here
     -- this file can contain specific instructions for your project
-    instructions_file = "avante.md",
+    instructions_file = ".github/copilot-instructions.md",
     -- for example
     provider = "copilot",
+    providers = {
+      copilot = {
+        model = "claude-3.5-sonnet",
+      },
+    },
   },
   dependencies = {
     "nvim-lua/plenary.nvim",

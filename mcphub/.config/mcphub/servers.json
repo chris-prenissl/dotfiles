@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "dart": {
+      "args": [
+        "dart",
+        "mcp-server",
+        "--force-roots-fallback"
+      ],
+      "command": "fvm",
+      "disabled": false
+    },
+    "filesystem": {
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "${HOME}/Projects"
+      ],
+      "command": "npx",
+      "disabled": false
+    }
+  }
+}
