@@ -9,6 +9,14 @@
       "command": "fvm",
       "disabled": false
     },
+    "dart-main": {
+      "args": [
+        "mcp-server",
+        "--force-roots-fallback"
+      ],
+      "command": "dart",
+      "disabled": false
+    },
     "filesystem": {
       "args": [
         "-y",

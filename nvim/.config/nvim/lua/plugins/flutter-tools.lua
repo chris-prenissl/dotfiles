@@ -6,6 +6,17 @@ return {
   },
   config = function()
     require("flutter-tools").setup({
+      lsp = {
+        settings = {
+          dart = {
+            analysisExcludedFolders = {
+              vim.fn.expand("$HOME/.pub-cache"),
+              vim.fn.expand("$HOME/fvm"),
+              vim.fn.expand("$HOME/.fvm"),
+            },
+          },
+        },
+      },
       widget_guides = { enabled = true },
       closing_tags = {
         highlight = "Comment", -- highlight for closing tag
@@ -35,5 +46,6 @@ return {
     setFlutterCommand("l", "LogToggle", opts)
     setFlutterCommand("o", "OutlineToggle", opts)
     setFlutterCommand("p", "PubGet", opts)
+    setFlutterCommand("T", "OpenDevTools", opts)
   end,
 }
