@@ -100,7 +100,6 @@
   },
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
-  "workbench.sideBar.location": "right",
   "json.schemaDownload.trustedDomains": {
     "https://schemastore.azurewebsites.net/": true,
     "https://raw.githubusercontent.com/": true,
